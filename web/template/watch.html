@@ -40,6 +40,34 @@
         </div>
 </marquee>
     </header>
+	<style>
+    /* Style for the marquee text */
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      background-color: #f2f2f2; /* Set your desired background color here */
+    }
+
+    /* Style for the inner text */
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%; /* Move the text off the screen */
+      animation: marquee 15s linear infinite; /* Adjust the duration as needed */
+    }
+
+    /* Keyframes for the marquee animation */
+    @keyframes marquee {
+      0%   { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee">
+    <span>MALLU SERIAL GROUP</span>
+  </div>
 
     <div class="container">
         <tag src="%s" class="player"></tag>
